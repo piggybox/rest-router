@@ -5,7 +5,7 @@ import unittest
 
 class TestRestService(unittest.TestCase):
 	def setUp(self):
-		self.url = "http://ec2-54-214-132-22.us-west-2.compute.amazonaws.com:5000/router/api/v1.0/message"
+		self.url = "http://localhost:5000/router/api/v1.0/message"
 
 
 	def test_input_in_good_format(self):
