@@ -9,7 +9,7 @@ class TestRestService(unittest.TestCase):
 
 
 	def test_input_in_good_format(self):
-		data = {"message":"SendHub Rocks",
+		data = {"message":"Hello",
 		 		"recipients":["+15555555556", "+15555555555", "+15555555554", "+15555555553", 
 		 				"+15555555552", "+15555555551", "+15555555551", "+12345678901"]}
 
@@ -19,7 +19,7 @@ class TestRestService(unittest.TestCase):
 
 
 	def test_wrong_phone_number(self):
-		data = {"message":"SendHub Rocks",
+		data = {"message":"Hello",
 		 		"recipients":["+15555555556", "+15555555555", "+15555555554", "+15555555553", 
 		 				"+15555555552", "+15555555551", "+15555555551", "+1234567890"]}
 
@@ -29,7 +29,7 @@ class TestRestService(unittest.TestCase):
 
 
 	def test_correctness_of_routing(self):
-		data = {"message":"SendHub Rocks",
+		data = {"message":"Hello",
 		 		"recipients":["+15555555556", "+15555555555", "+15555555554", "+15555555553", 
 		 				"+15555555552", "+15555555551", "+15555555551", "+12345678901"]}
 
